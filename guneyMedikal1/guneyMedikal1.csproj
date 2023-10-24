@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B52B9F2B-036E-42D3-8BD6-6596DA8D045D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>guneyMedikal1</RootNamespace>
+    <AssemblyName>guneyMedikal1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Drawing.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaSayfa.cs" />
+    <Compile Include="AnaSayfa2.cs" />
+    <Compile Include="AnaSayfaForm.cs" />
+    <Compile Include="Elektronik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Elektronik.Designer.cs">
+      <DependentUpon>Elektronik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="guneyMedikalDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>guneyMedikalDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="guneyMedikalDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>guneyMedikalDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Metal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metal.Designer.cs">
+      <DependentUpon>Metal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ortopedi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ortopedi.Designer.cs">
+      <DependentUpon>Ortopedi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hastabakım.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hastabakım.Designer.cs">
+      <DependentUpon>Hastabakım.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sarf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sarf.Designer.cs">
+      <DependentUpon>Sarf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Satislar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Satislar.Designer.cs">
+      <DependentUpon>Satislar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SatislariAc.cs" />
+    <Compile Include="Yntc.cs" />
+    <Compile Include="YoneticiPaneli.cs" />
+    <EmbeddedResource Include="Elektronik.resx">
+      <DependentUpon>Elektronik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metal.resx">
+      <DependentUpon>Metal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ortopedi.resx">
+      <DependentUpon>Ortopedi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hastabakım.resx">
+      <DependentUpon>Hastabakım.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Sarf.resx">
+      <DependentUpon>Sarf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Satislar.resx">
+      <DependentUpon>Satislar.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="guneyMedikalDataSet.xsc">
+      <DependentUpon>guneyMedikalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="guneyMedikalDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>guneyMedikalDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="guneyMedikalDataSet.xss">
+      <DependentUpon>guneyMedikalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="guneyMedikalDataSet1.xsc">
+      <DependentUpon>guneyMedikalDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="guneyMedikalDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>guneyMedikalDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="guneyMedikalDataSet1.xss">
+      <DependentUpon>guneyMedikalDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
